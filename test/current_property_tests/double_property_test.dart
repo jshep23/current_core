@@ -1,5 +1,4 @@
 import 'package:current_core/current_core.dart';
-import 'package:current_core/src/current_exceptions.dart';
 import 'package:test/test.dart';
 
 class DoubleViewModel extends CurrentStateViewModel {
