@@ -1,0 +1,11 @@
+name: current_core
+description: Core library for the Flutter and Jaspr Current State Management Packages.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.11.5
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6
