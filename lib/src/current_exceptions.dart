@@ -59,8 +59,7 @@ class PropertyNotAssignedToCurrentViewModelException extends CurrentPropertyExce
 
 /// Thrown when a CurrentViewModel is assigned to a CurrentState, but that CurrentViewModel is already assigned to a different CurrentState.
 ///
-/// This can occur when a CurrentWidget is rebuilt and attempts to assign the same CurrentViewModel instance to the new CurrentState and [AutomaticKeepAliveClientMixin] is
-/// not being used to preserve the state of the original CurrentState.
+/// This can occur when a CurrentWidget is rebuilt and attempts to assign the same CurrentViewModel instance to the new CurrentState. In Flutter this issue can be remedied by using the AutomaticKeepAliveClientMixin on the CurrentState's widget, which will preserve the CurrentState and its assigned CurrentViewModel across rebuilds.
 class CurrentViewModelAlreadyAssignedException extends CurrentException {
   CurrentViewModelAlreadyAssignedException(super.stack, super.type);
 
@@ -80,29 +79,4 @@ class CurrentViewModelAlreadyAssignedException extends CurrentException {
 
     return buffer.toString();
   }
-}
-
-/// Base class for exceptions thrown by CurrentTextController when there is an issue with the CurrentProperty it is trying to control.
-///
-abstract class CurrentTextControllerException extends CurrentException {
-  final CurrentProperty? property;
-
-  CurrentTextControllerException(super.stack, super.type, this.property);
-}
-
-/// Thrown when a [CurrentTextController] is initialized with a [CurrentProperty] type that is not compatible with the controller type requested.
-///
-class CurrentTextControllerCurrentPropertyTypeException extends CurrentTextControllerException {
-  final String attemptedControllerType;
-  final List<Type> validTypes;
-
-  CurrentTextControllerCurrentPropertyTypeException(
-    CurrentProperty property,
-    this.attemptedControllerType,
-    this.validTypes,
-  ) : super(StackTrace.current, property.runtimeType, property);
-
-  @override
-  String toString() =>
-      'CurrentTextControllerCurrentPropertyTypeException: The property ${property?.propertyName ?? type} is not a valid CurrentProperty type for the controller type "$attemptedControllerType". Valid types are: ${validTypes.join(', ')}\nStack: $stack';
 }
