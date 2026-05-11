@@ -6,6 +6,9 @@ on:
       - "lib/**"
       - "README.md"
       - "pubspec.yaml"
+      - "CHANGELOG.md"
+      - "getVersion.sh"
+      - "validateVersions.sh"
       - ".github/workflows/validate_docs.yml"
 
   push:
@@ -15,6 +18,9 @@ on:
       - "lib/**"
       - "README.md"
       - "pubspec.yaml"
+      - "CHANGELOG.md"
+      - "getVersion.sh"
+      - "validateVersions.sh"
       - ".github/workflows/validate_docs.yml"
 
 concurrency:
