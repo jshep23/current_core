@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://pub.dev/packages/current">
-    <img src="https://raw.githubusercontent.com/thirdversion/flutter_current/main/images/CurrentLogoSM.png" alt="Current Logo" />
+    <img src="https://raw.githubusercontent.com/jshep23/current_core/main/images/CurrentLogoSM.png" alt="Current Logo" />
   </a>
 </p>
 
