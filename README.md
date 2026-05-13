@@ -1,10 +1,9 @@
 <p align="center">
   <a href="https://pub.dev/packages/current">
-    <img src="https://raw.githubusercontent.com/jshep23/current_core/main/images/CurrentLogoSM.png" alt="Current Logo" />
+    <img src="./images/CurrentLogoText.png" alt="Current Logo" />
   </a>
 </p>
 
-<h1 align="center">Current Core</h1>
 <h3 align="center">A simple, lightweight, relatively useless package...</h3>
 <h3 align="center">Until you also use Flutter or Jaspr Current. Then this library is extraordinary!</h3>
 
