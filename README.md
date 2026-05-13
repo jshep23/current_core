@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://pub.dev/packages/current">
-    <img src="./images/CurrentLogoText.png" alt="Current Logo" />
+    <img src="./images/CurrentLogoTextSM.png" alt="Current Logo" />
   </a>
 </p>
 
