@@ -1,3 +1,7 @@
+## 1.0.1
+
+- Relaxed the Dart SDK constraint to support older versions of Dart.
+
 ## 1.0.0
 
 - Initial port from the [Flutter Current](https://pub.dev/packages/current) package. For the full changelog up to this point, see the [Flutter Current changelog](https://pub.dev/packages/current/changelog).
